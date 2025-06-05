@@ -5,28 +5,29 @@ const destinations = [
   {
     id: 1,
     name: 'Nosy Be',
-    image: '/images/Tours d\'ile de nosy be/nosy-be1.jpg',
+    image: '/images/Tours-ile-de-nosy-be/Bazar-be/n1.jpg',
     description: 'L\'île aux parfums, paradis tropical de Madagascar',
     price: 'À partir de 150€',
+    
   },
   {
     id: 2,
     name: 'Nosy Komba',
-    image: '/images/Nosy komba/komba1.jpg',
+    image: '/images/Nosy-komba/nk1.jpg',
     description: 'L\'île aux lémuriens, une expérience unique',
     price: 'À partir de 120€',
   },
   {
     id: 3,
     name: 'Nosy Sakatia',
-    image: '/images/Nosy sakatia/sakatia2.jpg',
+    image: '/images/Nosy-sakatia/sk1.jpg',
     description: 'L\'île aux orchidées, un joyau préservé',
     price: 'À partir de 130€',
   },
   {
     id: 4,
     name: 'Lokobe',
-    image: '/images/Lokobe/lokobe1.jpg',
+    image: '/images/Lokobe/l1.jpg',
     description: 'Réserve naturelle, biodiversité exceptionnelle',
     price: 'À partir de 100€',
   },

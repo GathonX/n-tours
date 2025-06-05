@@ -32,7 +32,7 @@ module.exports = {
         border: '#C5D5E0',     // gris doux pour séparateurs
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Montserrat','sans-serif'],
       },
     },
   },

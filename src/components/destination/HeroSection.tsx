@@ -21,7 +21,7 @@ export default function HeroSection({ name, description, image }: HeroSectionPro
         className="object-cover"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-secondary-dark/60" />
+      <div className="absolute inset-0 bg-secondary-dark/20" />
       <div className="relative container mx-auto px-4 h-full flex items-center">
         <div className="max-w-3xl text-white">
           <h1 className="text-5xl md:text-6xl font-extrabold mb-4 tracking-wide">

@@ -12,19 +12,19 @@ export default function Footer() {
   return (
     <footer className="bg-secondary-dark text-white">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-12">
           {/* À propos */}
-          <div>
+          <div className="lg:col-span-2">
             <h3 className="text-2xl font-bold mb-4">N-Tours</h3>
             <p className="mb-4">
               Partenaire de confiance pour découvrir Madagascar.  
               Des expériences uniques et authentiques.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-accent transition-colors" aria-label="Facebook">
+              <a href="https://facebook.com/NToursMadagascar" aria-label="Facebook" className="hover:text-accent transition-colors">
                 <Facebook size={24} />
               </a>
-              <a href="#" className="hover:text-accent transition-colors" aria-label="Instagram">
+              <a href="https://instagram.com/NToursMadagascar" aria-label="Instagram" className="hover:text-accent transition-colors">
                 <Instagram size={24} />
               </a>
             </div>
@@ -34,7 +34,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-3">Liens rapides</h3>
             <ul className="space-y-2">
-              {['À propos','Destinations','Circuits','Contact'].map((link) => (
+              {['À propos','Destinations','Contact'].map((link) => (
                 <li key={link}>
                   <Link
                     href={link === 'À propos' ? '/about' : `/${link.toLowerCase()}`}
@@ -61,6 +61,33 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          {/* Informations légales */}
+          <div>
+            <h3 className="text-xl font-semibold mb-3">Informations légales</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/mentions-legales" className="hover:text-accent transition-colors">
+                  Mentions légales
+                </Link>
+              </li>
+              <li>
+                <Link href="/politique-confidentialite" className="hover:text-accent transition-colors">
+                  Politique de confidentialité
+                </Link>
+              </li>
+              <li>
+                <Link href="/politique-cookies" className="hover:text-accent transition-colors">
+                  Politique de cookies
+                </Link>
+              </li>
+              <li>
+                <Link href="/conditions-generales" className="hover:text-accent transition-colors">
+                  Conditions générales de vente
+                </Link>
+              </li>
             </ul>
           </div>
 
